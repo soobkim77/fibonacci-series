@@ -1,5 +1,15 @@
+let a = 0
+let b = 1
+let c;
+
 function fibonacci(num) {
-  // type your code here
+  for (let i = 0; i <= num; i++){
+    console.log(a);
+    c = a + b;
+    a = b;
+    b = c;
+  }
+  return c
 }
 
 if (require.main === module) {
@@ -20,5 +30,7 @@ if (require.main === module) {
 
 module.exports = fibonacci;
 
-// Please add your pseudocode to this file
-// And a written explanation of your solution
+// starting at pair 0 and 1, add the previous number to the total
+// a + b = c add the two values, return the new value
+// adds the new value with the last value in the original equation
+
